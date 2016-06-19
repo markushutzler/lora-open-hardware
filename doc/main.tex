@@ -1,0 +1,55 @@
+% !TEX encoding = UTF-8 Unicode
+\documentclass[paper=a4paper, fontsize=11pt,twoside]{scrreprt}
+\usepackage[a4paper]{geometry}
+\geometry{height=24.5cm, bottom=2.5cm, textwidth=16.5cm}
+
+\usepackage{bytefield}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{vhistory}
+\usepackage{draftwatermark}
+\SetWatermarkText{DRAFT}
+\SetWatermarkScale{2.5}
+
+\newcommand*{\titleTH}{
+\thispagestyle{empty}
+{
+\raggedleft
+\vspace{8cm}
+\texttt{ \projectNumber-\reportNumber}\\
+\vspace{0.5cm}
+\textcolor{red}{\Huge \projectName}\\
+\vspace{0.5cm}
+{\Large \reportTitle}\par
+\vfill
+\reportAuthor\\
+\reportAuthorMail\\
+\vspace{0.5cm}
+Revision: \reportRevision\\}}
+
+\begin{document}
+
+\newcommand{\projectNumber}{P-}
+\newcommand{\projectName}{LoRa Open Hardware}
+\newcommand{\projectOwner}{}
+
+\newcommand{\reportNumber}{7}
+\newcommand{\reportRevision}{2016-06-19}
+\newcommand{\reportTitle}{General Documentation}
+\newcommand{\reportAuthor}{Markus Hutzler}
+\newcommand{\reportAuthorMail}{markus.hutzler@me.com}
+
+\titleTH
+
+\begin{versionhistory}
+\vhEntry{0.0}{19.06.2016}{Markus Hutzler}{Initial Draft}
+\end{versionhistory}
+
+\tableofcontents
+
+\chapter{Introduction}
+
+\end{document}

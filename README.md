@@ -1,1 +1,1 @@
-# lora-open-hardware
+# LoRa Open Hardware
