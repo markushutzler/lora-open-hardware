@@ -1,0 +1,77 @@
+[description]
+refdes=U?
+device=D2000DEV
+description=Quark D2000 Dev Kit
+comment=Created with autosym
+documentation=http://www.intel.com/content/www/us/en/embedded/products/quark/mcu/d2000/quark-d2000-crb-schematics.html
+symversion=0.8
+author=Markus Hutzler
+dist-license=BSD
+use-license=BSD
+category=Shield
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=1800
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+-:   Package
+
+[mapping left]
+4:  3.3V:    pwr
+
+5:  5V:      pwr
+
+3:  !RST:    in
+
+30: AREF:    an
+
+2:  IOREF:   an
+
+
+
+
+
+
+
+
+
+
+
+
+
+29: GND:     pwr
+6:  GND:     pwr
+7:  GND:     pwr
+[end]  
+
+[mapping right]
+25: GPIO0:   io
+
+20: GPIO2:   io
+9:  GPIO3:   io
+10: GPIO4:   io
+19: GPIO5:   io
+32: GPIO6:   io
+31: GPIO7:   io
+22: GPIO8:   io
+23: GPIO9:   io
+18: GPIO10:  io
+17: GPIO11:  io
+16: GPIO12:  io
+15: GPIO13:  io
+11: GPIO14:  io
+12: GPIO15:  io
+28: GPIO16:  io
+26: GPIO17:  io
+27: GPIO18:  io
+21: GPIO19:  io
+
+
+
+
+24: GPIO24:  io
+[end]

@@ -1,0 +1,51 @@
+[description]
+refdes=U?
+device=ORG4572
+description=ORG4572 GPS Module
+comment=Created with autosym
+documentation=https://www.origingps.com/wp-content/uploads/2016/07/Multi-Spider-ORG4572-Datasheet.pdf
+symversion=0.8
+author=Markus Hutzler
+dist-license=BSD
+use-license=BSD
+category=Radio
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=1800
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+-:   Package
+
+[mapping left]
+12:  VCC:      pwr
+
+5:   RESET:    in
+9:   ON_OFF:   in
+
+8:   RX/MOSI:  in
+11:  TX/MISO:  out
+6:   CTS/SCLK: io
+7:   !RTS/CS:  io
+
+1:   GND:      pwr
+3:   GND:      pwr
+[end]
+
+[mapping right]
+2:   RF_IN:    ani
+
+10:  1PPS:     out
+4:   WKUP:     out
+
+15:  GPIO1:    io
+16:  GPIO2:    io
+19:  GPIO3:    io
+20:  GPIO4:    io
+
+
+14:  GND:      pwr
+[end]

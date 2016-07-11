@@ -1,0 +1,43 @@
+[description]
+refdes=U?
+device=WRL-13678
+description=Sparkfun ESP8266 WiFi Module
+comment=Created with autosym
+documentation=http://
+symversion=1.0
+author=Markus Hutzler
+dist-license=BSD
+use-license=BSD
+category=RF
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=1600
+
+[variants]
+# variants are used to create symbols for different packages. The filename will
+# be: devicename + variant
+-   :  Package
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many
+# pis as variants!
+# if a variant has no such pin, use the '-' sign
+# an ! in front of the name will create a negative pin
+8:  Vcc:    pwr
+
+6:  RST:    in
+4:  CHPD:   in
+
+1:  GND:    pwr
+[end]
+
+[mapping right]
+2:  TXO:     out
+7:  RXI:     in
+
+5:  GPIO0:   io
+3:  GPIO2:   io
+[end]

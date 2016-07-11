@@ -1,0 +1,52 @@
+[description]
+refdes=U?
+device=RF_LoRa_Module
+description=LoRa Module from RF Solutions
+comment=Created with autosym
+documentation=http://
+symversion=1.0
+author=Markus Hutzler
+dist-license=BSD
+use-license=BSD
+category=RF
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=1600
+
+[variants]
+# variants are used to create symbols for different packages. The filename will
+# be: devicename + variant
+-   :  Package
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many
+# pis as variants!
+# if a variant has no such pin, use the '-' sign
+# an ! in front of the name will create a negative pin
+3:  Vcc:    pwr
+
+12: RST:    in
+16: !SEL:   in
+15: MISO:   out
+14: MOSI:   in
+13: SCLK:   in
+
+4:  RX_EN:  in
+5:  TX_EN:  in
+[end]
+
+[mapping right]
+1:  ANT:    rf
+
+6:  DIO0:   io
+7:  DIO1:   io
+8:  DIO2:   io
+9:  DIO3:   io
+10: DIO4:   io
+11: DIO5:   io
+
+2:  GND:    pwr
+[end]
