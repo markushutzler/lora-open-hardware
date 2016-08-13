@@ -1,14 +1,14 @@
 [Options]
-project Name = lora_oh_board
+project Name = lora_oh_shield
 excessive backup = True
 project number = H-
 pcb version = 01
 
 [Files]
-schematic = lora_oh_board.sch
-pcb = board.pcb
+schematic = shield.sch
+pcb = shield.pcb
 output path = ./output
-symbols path = ./../share/symbols
+symbols path = ./../share/symbols:./../share/symbold/build
 package path = ./../share/packages
 
 [Inventory]

@@ -1,0 +1,16 @@
+
+# General
+*.gz
+.DS_Store
+
+# gEDA
+*.sch~
+
+
+# LaTeX
+*.aux
+*.pdf
+*.hst
+*.toc
+*.log
+*.ver

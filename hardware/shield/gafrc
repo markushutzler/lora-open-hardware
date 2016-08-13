@@ -1,0 +1,2 @@
+(component-library "./../share/symbols")
+(component-library "./../share/symbols/build")
